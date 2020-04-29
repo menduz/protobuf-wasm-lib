@@ -10,9 +10,9 @@ jobs:
       - uses: actions/checkout@master
       - name: run
         run: ./container.sh
-      # - name: Publish
-      #   uses: menduz/oddish-action@master
-      #   with:
-      #     registry-url: "https://registry.npmjs.org"
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+      - name: Publish
+        uses: menduz/oddish-action@master
+        with:
+          registry-url: "https://registry.npmjs.org"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
