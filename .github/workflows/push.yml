@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - "!master"
+  pull_request:
+
+name: CI
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: run
+        run: ./container.sh
+      # - name: Publish
+      #   uses: menduz/oddish-action@master
+      #   with:
+      #     registry-url: "https://registry.npmjs.org"
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
