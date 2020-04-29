@@ -1,9 +1,7 @@
 on:
   push:
     branches:
-      - "!master"
-  pull_request:
-
+      - master
 name: CI
 jobs:
   install:
