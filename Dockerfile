@@ -1,4 +1,4 @@
-FROM trzeci/emscripten:1.39.10-upstream
+FROM trzeci/emscripten:1.39.10-fastcomp
 
 RUN apt-get update -y  && apt-get --no-install-recommends -y install \
     autoconf \
