@@ -9,12 +9,18 @@
     "type": "git",
     "url": "git+https://github.com/menduz/protobuf-wasm-lib.git"
   },
-  "keywords": [ "wasm", "protobuf", "emscripten" ],
+  "keywords": [
+    "wasm",
+    "protobuf",
+    "emscripten"
+  ],
   "author": "Agustin Mendez",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/menduz/protobuf-wasm-lib/issues"
   },
   "homepage": "https://github.com/menduz/protobuf-wasm-lib#readme",
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
