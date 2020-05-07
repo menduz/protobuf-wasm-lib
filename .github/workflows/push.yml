@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - name: remove old image
+        run: docker rmi builder-image || true
       - name: run
         run: ./container.sh
       - name: Publish
