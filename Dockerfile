@@ -6,4 +6,3 @@ RUN apt-get update -y  && apt-get --no-install-recommends -y install \
     automake \
     autogen \
     libtool && ln -s /usr/bin/libtoolize /usr/bin/libtool
-
